@@ -1321,7 +1321,10 @@ main {
         #sideBanner {
           display: none !important;
         }
+        #topBannerHead {
 
+        display: none;
+        }
 
         #MainPortal {
 
