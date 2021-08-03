@@ -4,7 +4,27 @@
 
 
 }
+@font-face {
 
+  font-family: forte;
+  src: url(../../assets/fonts/FORTE.TTF);
+}
+@font-face {
+
+  font-family: century gothic;
+  src: url(../../assets/fonts/GOTHIC.TTF);
+}
+
+@font-face {
+
+  font-family: eras itc;
+  src: url(../../assets/fonts/ERASBD.TTF);
+}
+@font-face {
+
+  font-family: Lucida sans;
+  src: url(../../assets/fonts/LSANS.TTF);
+	  }
 
 
 * {
@@ -101,6 +121,6 @@ body, html {
 		width: 80px;
 		
 		}
-		}
+	}
 
 /*******************************************************/

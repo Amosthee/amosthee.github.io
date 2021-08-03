@@ -12,12 +12,24 @@
 @font-face {
 
   font-family: forte;
-  src: url(../../assets/fonts/forte.ttf);
+  src: url(../../assets/fonts/FORTE.TTF);
 }
 @font-face {
 
   font-family: century gothic;
-  src: url(../../assets/fonts/gothic.ttf);
+  src: url(../../assets/fonts/GOTHIC.TTF);
+}
+
+@font-face {
+
+  font-family: eras itc;
+  src: url(../../assets/fonts/ERASBD.TTF);
+}
+@font-face {
+
+  font-family: Lucida sans;
+  src: url(../../assets/fonts/LSANS.TTF);
+
 }
 
 
@@ -192,6 +204,20 @@ main {
 
 
 /***********************************************************************/
+
+
+/******************************navbar**********************/
+
+
+    #mobViewNav {
+
+        display: none;
+
+          }
+
+
+
+/*******************************************************/
 
 /**************************************active focus etc***************/
     
@@ -1244,7 +1270,42 @@ main {
 
       @media screen and (max-width: 500px) {
 
+           ::-webkit-scrollbar {
 
+            display: none;
+          }
+          #MainPortal {
+
+            padding: 0;
+          }
+          .bg-dark {
+
+            background: #212529 !important;
+          }
+          #mobViewNav {
+            display: flex;
+           
+            background: #092b33;
+           
+            line-height: 10px;
+            text-align: center;
+            
+          }
+
+          #nav-anchorTXT {
+
+            
+            font-family: "eras itc";
+             font-weight: bold;
+             text-transform: uppercase;
+             padding: 0px;
+             font-size: 1.5rem;  
+          }
+          .main_Side_bar {
+
+            flex-direction: column;
+            height: 100vh;
+          }
           #contacts {
               
       background:  linear-gradient(90deg, transparent 25%, rgba(200, 200, 240, 0.7) 25% 75%, transparent 75%), url("../../assets/imgs/hands powder 03.jpg");
@@ -1255,6 +1316,7 @@ main {
       background-position: center;
      
     }
+
 
         #sideBanner {
           display: none !important;
@@ -1268,10 +1330,13 @@ main {
 
 .input-group {
 
+  margin-top: 30px;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
+
+
 
 .form-control {
 

@@ -5,7 +5,27 @@
 	--darkestTheme: #092b33;
 	--darkTheme: #115566;
 }
+@font-face {
 
+  font-family: forte;
+  src: url(../../assets/fonts/FORTE.TTF);
+}
+@font-face {
+
+  font-family: century gothic;
+  src: url(../../assets/fonts/GOTHIC.TTF);
+}
+
+@font-face {
+
+  font-family: eras itc;
+  src: url(../../assets/fonts/ERASBD.TTF);
+}
+@font-face {
+
+  font-family: Lucida sans;
+  src: url(../../assets/fonts/LSANS.TTF);
+}
 body,html {
 
 	-webkit-background-size: 100vh;
@@ -350,102 +370,9 @@ h3 {
 
 
 
-.statCard img {
-
-	width: 100%;
-	height: 100px;
-	object-fit: cover;
-	position: top;
-	transition: 0.3s;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	box-shadow: 0px -1px 5px;
-
-}
-
-
-.statCard #Web {
-
-	width: 100%;
-	height: 100px;
-	
-	/*background: #115566;*/
-	
-	background: url("server-lady.jpg");
-	background-size: 130%;
-	background-position: top left;
-	transition: 0.4s ease-out;
-	/*filter: blur(1px);
-	-webkit-filter: blur(1px);*/
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	box-shadow: black 0px -1px 5px;
-	font-size: 50px;
-	/*color: white;*/
-	font-family: "eras itc";
-	font-weight: 400;
-
-
-}
 
 
 
-.statCard:hover #Web {
-
-	transition: 0.4s;
-	margin-bottom: 5px;
-	background-position: center left;
-	box-shadow: 0px 2px 3px;
-	height: 150px;
-	font-size: 60px;
-}
-
-
-.statCard {
-
-	border-radius: 5px;
-	
-	transition: 0.5s;
-	text-align: center;
-	/*text-transform: uppercase;*/
-	/*margin: 15% 20%;*/
-
-	
-}
-
-
-
-.statCard div {
-	
-
-	display: flex;
-	flex-direction: column;
-	padding: 0px 10%;
-	margin: 0px 5px;
-	border-left: 1px solid lightgray;
-	border-right: 1px solid lightgray;
-	/*background: linear-gradient(60deg, #d0ebdd, gray);*/
-	text-align: center;
-	/*font-size: 15px;*/
-	height: 0px;
-	transition-property: height;
-	transition: 0.5s;
-	
-	display: none;
-}
-.statCard:hover div {
-
-		display: flex;
-
-		
-		height: 100%;
-		/*visibility: visible;*/
-		transition: 0.5s;
-		
-
-
-
-}
 
 .infoP {
 
@@ -475,14 +402,6 @@ h3 {
 
 }
 
-.statCard:hover .infoP {
-
-	
-	transition: 0.5s;
-	transition-delay: 2s;
-
-	
-}
 
 .infoNum {
 
@@ -505,176 +424,7 @@ h3 {
 	padding-top: 0px;
 	/*text-shadow: 0px 0px 5px;*/
 }
-#why {
 
-	font-size: 20px;
-	font-weight: 500;
-	padding: 20px;
-	background: lightblue;
-	background: url("server-lady.jpg");
-	background-size: cover;
-	background-position: bottom;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	box-shadow: 0px 1px 5px;
-
-}
-
-#why2 {
-
-	padding: 20px;
-	margin-bottom: 0px;
-	background: lightblue;
-	font-family: "eras itc";
-	font-weight: 500;
-	font-size: 20px;
-	
-}
-
-.statCard:hover #why2 {
-
-	
-	display: none;
-}
-.statCard:hover #why {
-
-	box-shadow: 0px -2px 3px;
-	/*visibility: hidden;*/
-}
-.infoCard #img1 {
-
-	position: top center;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-}
-
-.infoCard #img2 {
-
-	position: bottom center;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-
-}
-
-.infoCard p:hover {
-
-	/*display: all;*/
-}
-section {
-
-	/*background: url("website.jpg");
-	background-size: cover;*/
-
-}
-
-#sec04 {
-
-	/*box-shadow: 0px 2px 5px 2px;*/
-}
-#sec04 img {
-
-	padding: 1.5em 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-
-}
-
-}
-
-#sec04 div {
-
-
-	margin-bottom: 80px;
-	height: 640px;
-	background: linear-gradient(180deg, rgba(208, 235, 221, 0.0)30%, rgba(208, 235, 221, 1.0) 50%);
-
-
-}
-
-#sec01 {
-
-	background: url("imageStats.jpg");
-	background-size: cover;
-
-	margin-top: 50px;
-}
-
-section:hover {
-
-	
-	box-shadow: 0px 2px 5px 2px;
-	background-position: bottom;
-	/*transform: scale(1.02);
-	transition: 0.5s;	*/
-
-
-	
-}
-
-section img:hover {
-
-	
-	margin-right: 5px;
-}
-
-
-
-.cropTeam h3 {
-
-	
-	background: linear-gradient(90deg, rgba(208, 235, 221, 1.0), rgba(208, 235, 221, 1.0));
-	
-}
-
-#sec02 {
-
-	background: url("website.jpg");
-	background-size: cover;
-}
-#sec03 {
-
-	background: url("roadway.jpg");
-	
-	background-position: bottom;
-	background-size: cover;
-
-
-}
-
-#sec05 {
-
-	background: url("server-room.jpg");
-	
-	background-position: center;
-	background-size: cover;
-	transition: 0.4s;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-
-}
-
-#sec05:hover {
-
-	transform: rotateX(180deg);
-}
-.servSection {
-
-	margin: 0;
-	padding: 0;
-	width: 90%;
-}
-
-.imgProjects {
-
-
-	width: 70%;
-	object-fit: cover;
-	border-radius: 5px;
-	/*box-shadow: 2px 2px 1px;*/
-	padding-top: 20px;
-	
-}
 
 .projects {
 
@@ -927,3 +677,12 @@ height: 250px;
 
 /*********************************************/
 }
+
+ @media screen and (max-width: 500px) {
+ 	.teamRow{
+
+ 		margin: 0 5%;
+ 	}
+
+
+ }
